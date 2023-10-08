@@ -1,0 +1,179 @@
+.content
+{
+    height: calc(100vh - 46px);    
+    width: 1180px;
+    margin-inline: auto;
+    padding: 0 18px 18px 18px;
+
+    background-color: white;
+    overflow-y: auto;
+}
+
+.content input
+{
+    border: none;
+    position: relative;
+}
+
+.content input[type="datetime-local"]
+{
+    width: 160px;
+}
+
+.content input[type="time"]
+{
+    width: 80px;
+}
+
+.content input[type="datetime-local" i], .content input[type="time" i]
+{
+    font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';
+    font-size: 16px;
+}
+
+.content input[type="datetime-local"]::-webkit-calendar-picker-indicator, .content input[type="time"]::-webkit-calendar-picker-indicator
+{
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.new
+{    
+    padding: 12px;
+    border-right: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    border-left: 1px solid #DEDEDE;
+    border-radius: 0 0 12px 12px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.new__tag
+{
+    flex: 1;
+}
+
+.new__periods>:last-child
+{
+    margin-bottom: 0;
+}
+
+.new__period
+{
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.new__time
+{
+    display: flex;
+    flex-direction: column;
+}
+
+label.new__time
+{
+    font-size: 12px;
+}
+
+.new__button
+{
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 56px;
+}
+
+.new__button_play
+{
+    background-color: #00CE08;
+}
+
+.new__button_pause
+{
+    background-color: #005FCE;
+}
+
+.new__button_stop
+{
+    background-color: #CE2500;
+}
+
+.session
+{
+    margin-top: 16px;
+}
+
+.session header
+{
+    margin-bottom: 8px;
+    display: flex;
+    gap: 16px;
+}
+
+.session__content
+{
+    border: 1px solid #DEDEDE;
+    border-radius: 12px;
+}
+
+.session__content .session__task
+{
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.session__content > :last-child
+{
+    border: none;
+}
+
+.session__task
+{
+    display: flex;
+    padding: 12px;
+}
+
+.session__task_tag
+{
+    flex: 1;
+}
+
+.session__task_periods>:first-child
+{
+    margin-top: 0;
+}
+
+.session__task_periods>:last-child
+{
+    margin-bottom: 0;
+}
+
+.period
+{
+    display: flex;
+    gap: 12px;
+    width: 617px;
+    justify-content: flex-start;
+
+    margin-block: 6px;
+}
+
+.period__delete
+{
+    margin-left: auto;
+    display: none;
+}
+
+.period:hover .period__delete
+{
+    display: block;
+}
